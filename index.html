@@ -1,90 +1,171 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
 <head>
-    <meta name="keywords" content="獻蛋超人,捐款">
-  <title>獻蛋超人 及時送愛．生日蛋糕聯合募集</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="獻蛋超人,捐款">
+  <title>獻蛋超人 及時送愛・生日蛋糕聯合募集</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Dialogflow -->
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="上獻中"
-  agent-id="3ac7d319-db03-4e96-b81d-03202f2334df"
-  language-code="zh-tw"
-></df-messenger>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="上獻中"
+    agent-id="3ac7d319-db03-4e96-b81d-03202f2334df"
+    language-code="zh-tw">
+  </df-messenger>
+
   <style>
-    h2 {
-  background-color: rgb(48, 52, 78);
-  color: rgb(255, 255, 255);
-}
-  .fakeimg {
-    height: 200px;
-    background: #8a8a8a;
-  }
-  .city {
-    float: left;
-    margin: 5px;
-    padding: 15px;
-    width: 300px;
-    height: 300px;
-    border: 1px solid rgb(125, 233, 255);
+  
+  @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap');
 
-}
 
-</style>
+    body {
+      background-color: #d8f2da;
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    h1, h2 {
+      font-family: 'Noto Serif TC', serif;
+      background-color: #281125;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    h5, h6 {
+      margin-top: 30px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .social-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 24px;
+      font-size: 18px;
+      color: white;
+      background-color: #a0bda3;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-btn:hover {
+      background-color: #c5dfe5;
+      color: white;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .qr-img {
+      width: 180px;
+      margin: 15px;
+    }
+
+    .mascot-img {
+      width: 30%;
+      max-width: 260px;
+      margin: 20px auto;
+    }
+
+    hr {
+      border-top: 2px dashed #bbb;
+      margin: 50px 0;
+    }
+
+    .footer {
+      background-color: #a0bda3;
+      text-align: center;
+      padding: 20px;
+      color: #333;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .mascot-img {
+        width: 60%;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
-<body style="background-color:#e0feff;">
 
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>獻蛋超人</h1>
+<body>
+
+  <div class="jumbotron text-center mb-0" style="background-color: #a0bda3">
+    <h1 class="display-4">獻蛋超人</h1>
+    <p class="lead">及時送愛・生日蛋糕聯合募集</p>
   </div>
 
-  <div style="text-align: center;">
-    
-   <h2>我們在做什麼?</h2>
-   <h5>宣傳捐款活動，讓更多弱勢家庭可以擁有一年一次的生日祝福!<br>
-   </h5>
-   <div class="container mt-3"></div>
-   <h2>名字的由來</h2>
-    <h5>「獻」：奉獻蛋糕的獻，意指希望大家的無私奉獻都會有好的結果，每個人都像超人一樣溫暖。<br>
-        「蛋」：蛋糕的蛋，代表著大家貢獻的每一分錢都是最好的祝福，真心希望每個小孩子都能收到屬於自己的蛋糕。
-   </h5>
-   
-</div>
+  <div class="container section">
+    <h2>我們在做什麼？</h2>
+    <h5>宣傳捐款活動，讓更多弱勢家庭可以擁有一年一次的生日祝福！</h5>
+  </div>
 
-<div style="text-align: center;">
-  <hr/>
-  <h2>如何捐款?</h2>
-  <div class="container mt-3">
-  <img src="moneyQRcode.jpg" alt="圖片描述" style="width: 20%; height: 20%;">
-  <h5>掃描QRCode即可!</h5>
-</div>
-<hr/>
-<div class="container mt-3"></div>
-   <h2>我們的IG以及Threads</h2>
-   <a href="https://www.instagram.com/supercakehero?igsh=MWZpYXp5eDlnODU5MA%3D%3D&utm_source=qr" style="font-size: 24px;" class="button">Instagram</a>
-   <a href="https://www.threads.com/@supercakehero?igshid=NTc4MTIwNjQ2YQ==" style="font-size: 24px;" class="button">Threads</a>
-   <div class="container mt-3">
-    <img src="IGQRcode.jpg" alt="圖片描述" style="width: 20%; height: 20%; margin-right:16px;">
-    <img src="Threads.jpg" alt="圖片描述" style="width: 20%; height: 20%;"><br><br>
-    <h6>追蹤我們的社群以便了解更多內容以及觀看精彩的小故事!</h6>
-   </div>
-<hr/>
-<h2>我們的吉祥物</h2>
-<div class="container mt-3">
-  <img src="supercakehero.jpg" alt="圖片描述" style="width: 50%; height: 50%;">
-</div>
-<hr/>
+  <div class="container section">
+    <h2>名字的由來</h2>
+    <h5>
+      「獻」：奉獻蛋糕的獻，意指希望大家的無私奉獻都會有好的結果，每個人都像超人一樣溫暖。<br>
+      「蛋」：蛋糕的蛋，代表著大家貢獻的每一分錢都是最好的祝福，真心希望每個小孩子都能收到屬於自己的蛋糕。
+    </h5>
+  </div>
 
+  <div class="container section">
+    <h2>如何捐款？</h2>
+    <img src="moneyQRcode.jpg" alt="捐款QRCode" class="qr-img">
+    <h5>掃描 QR Code 即可！</h5>
+  </div>
 
-</div>
-  
+  <div class="container section">
+    <h2>我們的 IG 以及 Threads</h2>
+    <a href="https://www.instagram.com/supercakehero?igsh=MWZpYXp5eDlnODU5MA%3D%3D&utm_source=qr" class="social-btn">Instagram</a>
+    <a href="https://www.threads.com/@supercakehero?igshid=NTc4MTIwNjQ2YQ==" class="social-btn">Threads</a>
+    <div class="row justify-content-center mt-4">
+      <div class="col-6 col-md-3">
+        <img src="IGQRcode.jpg" alt="Instagram QR Code" class="qr-img">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="Threads.jpg" alt="Threads QR Code" class="qr-img">
+      </div>
+    </div>
+    <h6 class="mt-4">追蹤我們的社群以便了解更多內容以及觀看精彩的小故事！</h6>
+  </div>
 
+  <div class="container section">
+    <h2>我們的吉祥物</h2>
+    <img src="supercakehero.jpg" alt="獻蛋超人" class="mascot-img d-block mx-auto">
+  </div>
+
+  <div class="footer">
+    感謝您的支持，一起讓愛延續 ♥<br>
+    &copy; 2025 獻蛋超人 Super Cake Hero
+  </div>
 
 </body>
-<body bgcolor="light yellow"></body>
 </html>
